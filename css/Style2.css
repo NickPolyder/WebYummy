@@ -1,0 +1,940 @@
+/* 
+    Document   : Style2.css
+    Created on : 4 Μαϊ 2013, 8:27:53 μμ
+    Author     : NIKOLAS
+    Description:
+        Purpose of the stylesheet follows.
+*/
+body
+{
+padding:0;
+margin:0;
+background-color: Black;
+/*background-image: url('../Images/background.png'); */
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: 100% 120% ;
+font-family: serif;
+}
+h1,h2
+{
+    color: white;
+    padding:0;
+    margin:0;
+    font-size: 4em;
+}
+h3,h4
+{
+    color: #999999;
+     padding:0;
+    margin:0;
+    font-size: 3em;
+}
+h5
+{
+    color: #999999;
+     padding:0;
+    margin:0;
+    font-size: 2em;
+}
+h6
+{
+    color: #999999;
+     padding:0;
+    margin:0;
+    font-size: 1.4em;
+}
+p
+{
+    padding:1em;
+    margin:0;
+    color: white;
+}
+a
+{
+color:skyblue;    
+}
+a:hover
+{
+   color: cyan;
+   
+}
+a:visited
+{
+    color: aqua;
+}
+.goback
+{
+    color:white;
+    font-size: xx-large; 
+    float:left;
+    
+}
+.goback:before
+{
+    content:url('../Images/back.png') ;
+}
+
+/*---Header--------------------------------------------------------*/
+#Header
+{
+    position:relative;
+    padding:0;
+    margin:0;
+    min-height: 117px;
+    height:117px;
+    background-color: black;
+    /*background-image: url('../Images/header.png');*/
+}
+#Header h1
+{
+position:absolute;
+top:6%;
+left:8%;
+color: white;
+    padding:0;
+    margin:0;
+    font-size: 4em;
+}
+/*--- Menu-----------------------------------------------------------*/
+#Menu
+{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    height:3.3em;
+    font-family:sans-serif;
+    font-size: larger;
+
+}
+#Menu ul
+{
+margin: 0;
+padding: 0;
+float:left;
+}
+#Menu ul li a {
+   
+    display: block;
+    padding: 1em 1.5em;
+    text-decoration: none;
+font-weight: bold;
+background-color: white;
+
+}
+#Menu ul li:hover , #Menu ul li:hover a:hover
+{
+   
+    color: darkblue;
+}
+#Menu ul li a:link,#Menu ul li a:visited
+{
+    text-decoration: none;
+    color:darkred;
+
+}
+
+#Menu ul ul {
+    display: none;
+}
+#Menu ul li:hover > ul {
+    display: block;
+}
+#Menu ul
+{
+    padding:0;
+   display: inline-table;
+    list-style: none outside none;
+    position: relative;   
+}
+#Menu ul:after
+{
+     clear: both;
+    content: "";
+    display: block;
+    
+}
+
+#Menu ul li
+{
+    float:left;
+}
+
+
+#Menu ul ul {
+  
+    padding: 0;
+    position: absolute;
+    top: 100%;
+}
+#Menu ul ul li {
+ 
+    position: relative;
+}
+
+/*--- Main-----------------------------------------------------------*/
+#Main
+{
+    min-height: 30em;
+   background-color: black;
+    padding:0;
+    margin:0;
+    
+}
+
+/* --- Footer ------------------------------- */
+#Footer
+{
+  padding:0;
+  margin:0;
+  
+  text-align: center;
+  color: crimson;
+}
+
+
+/* --- Log In Form ------------------------------- */
+#lgo
+{
+    text-align: center;
+    padding:0.5em 0;
+    margin:0;
+    
+}
+
+
+.buttons td
+{
+    padding:1em 0;
+    margin:0;
+}
+
+#LogIn
+{
+  
+    padding: 0.5em;
+    margin:0;
+  color:azure;
+}
+
+/* --- Register Form ------------------------------- */
+
+.CreateForms
+{
+     font-size: 1.3em;
+    color:azure;
+    padding:0;
+    margin:0 auto;
+}
+.CreateForms input[type=text],.CreateForms input[type=password]
+{
+    text-align: center;
+    font-size: 0.8em;
+    color:black;
+    padding:0;
+    margin:0 auto; 
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+CreateForms input[type=file]
+{
+    text-align: center;
+    font-size: 0.8em;
+    color:#999999;
+    padding:0;
+    margin:0 auto; 
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+.CreateForms select
+{
+    text-align: center;
+    font-size: 0.8em;
+    color:black;
+    padding:0;
+    margin:0 auto; 
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+.CreateForms textarea{
+    
+  
+    font-size: 0.8em;
+    color:gray;
+    padding:0.5em;
+    margin:0 auto;
+ 
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+
+.CreateForms input[type=submit],.CreateForms input[type=reset]
+{
+    width:70%;
+    font-size: 0.8em;
+    color:black;
+    padding:0.2em;
+    margin:0 auto;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+.TableForms
+{
+    padding:2em; 
+    margin:0 auto; 
+    table-layout:fixed;
+}
+#Activation
+{
+    color: white;
+      padding:0;
+    margin:0 auto;
+}
+
+/* --- Errors ------------------------------- */
+
+.error
+{
+    color: #ff6600;  
+}
+.required:after
+{
+    font-size: large;
+    color: #ff6600;
+    content: "*";
+}
+
+/* Message's----------------------------------------------------------------------------------*/
+.message
+{
+    text-align: center;
+    padding: 1em;
+    margin: 1% 10%;
+    border-radius: 1em;
+    border: thin solid gold;
+}
+.info
+{
+    color:white;
+    background-color: darkblue;
+    
+}
+
+.warning
+{
+    color:white;
+    background-color: darkorange;
+ font-size: x-large;
+  
+}
+.center
+{
+    padding:0;
+    margin:0 auto;
+    text-align: center;
+    
+}
+
+/*Catalog sheets ---------------------------------------------------------------- */
+
+#UserPanel
+{
+
+    padding:0;
+    margin:0 auto;
+   min-width:40%;
+   width:40%;
+    font-family:sans-serif;
+    font-size: larger;
+    
+}
+#UserPanel ul
+{
+    margin:0;
+    padding:0;
+    float:left;
+    
+}
+#UserPanel ul li:hover
+{
+border: solid 1px darkgray;    
+}
+#UserPanel ul li 
+{
+    
+     background-color: whitesmoke ;
+     display:inline;
+     margin:0;
+     padding: 0.5em 1em;
+     border-bottom-left-radius: 1em;
+     border-bottom-right-radius: 1em;
+     border-top-left-radius: 1em;
+     border-top-right-radius: 1em;
+     min-width:5em;
+     min-height:5em;
+     background-size: 100% 100%;
+ 
+     
+}
+
+#UserPanel ul li:hover , #UserPanel ul li:hover a:hover
+{
+    color: black;
+}
+#UserPanel ul li a:link,#UserPanel ul li a:visited
+{
+    text-decoration: none;
+    color: #777777;
+   padding:0.5em 2em;
+}
+#BusinessPanel
+{
+
+    padding:0;
+    margin:0 auto;
+ 
+    font-family:sans-serif;
+  
+    
+}
+#BusinessPanel ul
+{
+    margin:0;
+    padding:0;
+    float:left;
+    
+}
+
+#BusinessPanel ul li 
+{
+    
+     background-color: whitesmoke ;
+     display:inline;
+     margin:0;
+     border-bottom-left-radius: 1em;
+     border-bottom-right-radius: 1em;
+     border-top-left-radius: 1em;
+     border-top-right-radius: 1em;
+     min-width:5em;
+     min-height:5em;
+     background-size: 100% 100%;
+ 
+     
+}
+#BusinessPanel ul li:hover
+{
+border: solid 1px darkgray;    
+}
+
+#BusinessPanel ul li:hover , #BusinessPanel ul li:hover a:hover
+{
+    color: black;
+}
+#BusinessPanel ul li a:link,#BusinessPanel ul li a:visited
+{
+    text-decoration: none;
+    color: #777777;
+   padding:0.5em 1em;
+}
+#BusCat
+{
+    width:80%;
+    height:auto;
+    padding:0;
+    margin:0 auto;
+    overflow: auto;
+    color:white;
+    
+}
+#transback
+{
+    float:right;
+    padding:0.2em;
+    margin: 0;
+    
+}
+.CatalogFormtable
+{
+  padding:1em 3em; 
+table-layout:fixed;  
+width:80%;
+margin:0 auto;
+}
+
+.catowners
+{
+    background-color: #999999 ;
+    color:black;
+    border:solid 0.3em #00cc33;
+    text-align:center;
+}
+.catdetails
+{
+    background-color: #666666;
+    color: #cccccc;
+    border:solid 0.3em #669900;
+    text-align:center;
+}
+.catdetails a:link , .catdetails a:visited
+{
+    color: #ffffff;
+   padding:0;
+   margin:0;
+   
+}
+.catdetails a:hover , .catdetails a:active
+{
+    color: #cccccc;
+   padding:0;
+   margin:0;
+   
+}
+/* Edit-Delete css -----------------------------------------------------------------------------------*/
+.EditDeltable
+{
+padding:1em 3em; 
+width:80%;
+margin:0 auto;
+}
+.editdeldiv
+{
+    padding:0;
+    margin:0 auto;
+    
+}
+#List
+{
+   min-width: 40em;
+    
+    width:50em;
+    height:20em;
+    padding:0;
+    margin:0;
+    overflow: auto;
+    color:white;
+    
+}
+#DeleteList  a,#DeleteList a:visited
+{
+   color: red;
+   padding:0;
+   margin:0;
+   
+}
+#DeleteList  a:hover,#DeleteList a:active
+{
+   color: darkorange;
+   padding:0;
+   margin:0;
+   
+}
+.restrictform
+{
+    
+    font-size: 1.4em;
+    color:azure;
+    padding:0;
+    margin:0 auto;
+}
+.restrictform input[type=text]
+{
+    text-align: center;
+    font-size: 0.8em;
+    color:gray;
+    padding:0;
+    margin:0 auto; 
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+.restrictform textarea{
+    
+  
+    font-size: 0.8em;
+    color:gray;
+    padding:0.5em;
+    margin:0 auto;
+ 
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+.restrictform select
+{
+    text-align: center;
+    font-size: 0.8em;
+    color:black;
+    padding:0;
+    margin:0 auto; 
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+.restrictform input[type=submit], .restrictform input[type=reset]
+{
+    width:70%;
+    font-size: 1em;
+    color:black;
+    padding:0.2em;
+    margin:0 auto;
+    border-bottom-left-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-top-left-radius: 0.5em;
+    border-top-right-radius: 0.5em;
+}
+#upload
+{
+    border: solid thin white;
+    padding: 0.2em;
+    margin:0;
+    text-decoration: none;
+    
+}
+#upload:hover{
+    background-color: turquoise;
+    border-color: blue;
+}
+#upload a:link,#upload a:visited 
+{
+    color:#ff6666;
+   
+    
+}
+#upload  a:hover,#upload a:active
+{
+    color: #cc0000;
+   
+    
+}
+/*GeoTool------------------------------------------------------------------------------------------- */
+#map-canvas, #map_canvas {
+ width: 50%;
+    height: 250px;
+    margin:0 auto;
+}
+
+
+
+
+#panel {
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  margin-left: -180px;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+}
+
+/* View Form-------------------------------------------------------------------------*/
+#ViewBusiness
+{
+    width:80%;
+    padding: 0;
+    margin:0 auto;
+    overflow: auto;
+}
+.ViewTable{
+    width: 100%;
+    padding:0.5em; 
+    margin:0 auto; 
+    table-layout: fixed;
+    color:white;
+    background-color: darkgray;
+    border:outset thick white;
+}
+.ViewTable thead{
+    font-size: xx-large;
+    color:white;
+}
+.ViewTable thead td:hover{
+    padding:0; 
+    margin:0.2em;
+    color: #bdbdbd;
+    background-color: #2d2d2d;
+}
+.ViewTable tfoot
+{
+    font-size: large;
+    color:white;
+    padding: 0;
+    margin:0;
+    
+}
+.unpressedtd
+{
+ background-color: gray;
+}
+
+.labels
+{
+    font-size: x-large;
+    color: #002b2b;
+    padding: 0;
+    margin:0;
+}
+.records
+{
+   font-size: x-large;
+    color: white;
+    padding: 0;
+    margin:0; 
+    text-align: center;
+}
+/* Search context ------------------------------------------------------------*/
+#trans
+{
+    color:white;
+    font-size: larger;
+    text-align: center;
+}
+#SearchForm{
+    
+    padding:0;
+    margin:0;
+    font-size: x-large;
+    
+}
+#SearchForm input[type=text]
+{
+    border-bottom-left-radius: 0.5em;
+     border-bottom-right-radius: 0;
+     border-top-left-radius: 0.5em;
+     border-top-right-radius: 0;
+     padding:0.2em 0 0.2em 0.2em;
+     margin:0;
+     font-size: 1em;
+}
+#SearchForm input[type=button]
+{
+    border-bottom-left-radius: 0;
+     border-bottom-right-radius: 0.5em;
+     border-top-left-radius: 0;
+     border-top-right-radius: 0.5em;
+     padding:0.2em 0.2em 0.2em 0;
+     margin:0;
+     font-size: 1em;
+}
+#SearchForm input[type=submit]
+{
+    border-bottom-left-radius: 0;
+     border-bottom-right-radius: 0.5em;
+     border-top-left-radius: 0;
+     border-top-right-radius: 0.5em;
+     padding:0.2em 0.2em 0.2em 0;
+     margin:0;
+     font-size: 1em;
+}
+#SearchForm select
+{
+    border-bottom-left-radius: 0.5em;
+     border-bottom-right-radius: 0.5em;
+     border-top-left-radius: 0.5em;
+     border-top-right-radius: 0.5em;
+     padding:0;
+     margin:0;
+     font-size: large;
+}
+#searchbox{
+    
+    float:left;
+}
+#searchbox input[type=submit]
+{
+     border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    text-align:center;
+    padding:1.2em 0.8em;
+    margin: 0em;
+}
+#search1{
+    float:left;
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    text-align:center;
+    padding:1.2em 2.5em;
+    margin: 0 0 0 1em;
+}
+.XMLi a:link ,.XMLi a:visited
+{
+    color:white;
+}
+
+.XMLi a:hover
+{
+    color: slategray;
+}
+.need{
+    display:none;
+}
+#extent{
+    cursor: pointer;
+}
+
+/*Home Page-------------------------------------------------------------*/
+
+#leftsidebar
+{
+  width:30%;
+  float:left;
+  margin:0 0 0 2em;
+ 
+/* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(top left, #FFFFFF 0%, #000000 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(top left, #FFFFFF 0%, #000000 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(top left, #FFFFFF 0%, #000000 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #FFFFFF), color-stop(1, #000000));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(top left, #FFFFFF 0%, #000000 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to bottom right, #FFFFFF 0%, #000000 100%);
+}
+
+#leftsidebar a
+{
+    text-decoration: none;
+    color:white;
+  
+    padding:0em 3.3em;
+    margin: 0;
+    
+}
+#leftsidebar a:hover, #leftsidebar a:active
+{
+    
+    color:black;
+}
+#leftsidebar tr th
+{
+    font-size: xx-large;
+    text-align: center;
+}
+#leftsidebar tr  td
+{
+     font-size: xx-large;
+    text-align: center;
+    width: 100em;
+        
+}
+
+#leftsidebar tr td:hover
+{
+    background-color: gray;    
+    border-left: thin solid #383838;
+    border-right: thin solid #383838;
+ 
+}
+
+#centerview
+{
+    width:60%;
+  height:30em;
+    float:right;
+     margin:0 2em 0 0;
+  padding: 1em;
+  overflow: auto;
+
+  /* IE10 Consumer Preview */ 
+background-image: -ms-linear-gradient(bottom right, #FFFFFF 0%, #000000 100%);
+
+/* Mozilla Firefox */ 
+background-image: -moz-linear-gradient(bottom right, #FFFFFF 0%, #000000 100%);
+
+/* Opera */ 
+background-image: -o-linear-gradient(bottom right, #FFFFFF 0%, #000000 100%);
+
+/* Webkit (Safari/Chrome 10) */ 
+background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, #FFFFFF), color-stop(1, #000000));
+
+/* Webkit (Chrome 11+) */ 
+background-image: -webkit-linear-gradient(bottom right, #FFFFFF 0%, #000000 100%);
+
+/* W3C Markup, IE10 Release Preview */ 
+background-image: linear-gradient(to top left, #FFFFFF 0%, #000000 100%);
+}
+
+/* Contact ------------------------------------------------------------ */
+#Nick
+{
+    padding:0;
+    margin:1em;
+    border: thin solid darkslateblue;
+    font-size: 1.1em;
+    color:white;
+    text-align: left;
+}
+#Nick hr
+{
+   color:darkslateblue; 
+}
+#Ath
+{
+      padding:0;
+    margin:1em;
+    border: thin solid darkred;
+    font-size: 1.1em;
+    color:white; 
+    text-align: right;
+}
+#Ath hr
+{
+ color:darkred;   
+}
+.Name
+{
+  
+    padding:0.4em;
+    margin:0;
+    
+}
+.Contact
+{
+  
+    padding:0.4em;
+    margin:0;   
+}
+.Contact a,.Contact a:visited
+{
+    color: #cccccc;
+}
+.Contact a:hover
+{
+    color: #666666;
+}
+
+.facebook
+{
+    width:54px;
+    height:54px;
+    background-image: url('../Images/Facebook.png');
+    background-size:54px;
+    background-repeat: no-repeat;
+    
+    
+}
+.facebook:hover
+{
+    background-image: url('../Images/Facebook-over.png');
+}
